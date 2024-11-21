@@ -12,10 +12,7 @@ class Login {
        //variable declaration
      private String name;
     private String lastname;
-    private String initialUsername;
-    private String initialPassword;
-    private String finalUserName;
-    private String finalpassWord;
+    
     
     //setting getter and setter methods
     public String getName() {

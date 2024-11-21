@@ -4,9 +4,9 @@
 
 package com.mycompany.useraccounts;
 
-import java.util.Scanner;
-import javax.swing.JDialog;
-import javax.swing.JOptionPane;
+import java.util.*;
+import javax.swing.*;
+
 
 /**
  *
@@ -52,7 +52,7 @@ public class UserAccounts {
 }
        
        //login to account
-       if(initialUsername.contains("_") && initialUsername.length() <= 5 && infor.checkPasswordComplexity(initialPassword)){
+       if( infor.checkUserName(initialUsername) && infor.checkPasswordComplexity(initialPassword)){
        
          //prompting user to enter username to login
        System.out.println("Please enter your username to login:");

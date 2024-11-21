@@ -9,12 +9,9 @@ package com.mycompany.useraccounts;
  * @author Blessing
  */
 class Task {
-        private String taskDescription, taskID;
-   private String taskName, developer_details;
-   private int tasks;
-   private String [] definetasks = new String [tasks];
-   private int statusOption;
-   private int time;
+       
+ 
+ 
     private int totalHours = 0;
   
 

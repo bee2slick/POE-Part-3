@@ -12,7 +12,7 @@ public class partThree {
     
     // Method to find the index of the task with the longest duration
     public int findLongestTask(int[] durations) {
-        int maxIndex = -1;
+        int maxIndex = -1; 
         int maxDuration = 0;
         for (int i = 0; i < durations.length; i++) {
             if (durations[i] > maxDuration) {
@@ -50,15 +50,15 @@ public class partThree {
         }
 
         if (!found) {
-            result.append("No tasks found for this developer.");
+            result.append("No tasks found under this developer name.");
         }
 
         return result.toString();
     }
-     // Method to delete a task by its name
+   //delete task method using task name
     public String deleteTaskByName(String taskName, String[] taskNames, String[] developers, String[] taskStatus, int[] taskDuration) {
         for (int i = 0; i < taskNames.length; i++) {
-            if (taskNames[i] != null && taskNames[i].equalsIgnoreCase(taskName)) { // Check if task name matches the input
+            if (taskNames[i] != null && taskNames[i].equalsIgnoreCase(taskName)) { 
                 // Shift elements left to fill in the gap
                 for (int j = i; j < taskNames.length - 1; j++) {
                     taskNames[j] = taskNames[j + 1];
@@ -73,10 +73,10 @@ public class partThree {
                 taskStatus[taskStatus.length - 1] = null;
                 taskDuration[taskDuration.length - 1] = 0;
 
-                return "Task '" + taskName + "' deleted successfully.";
+                return "Task '" + taskName + "' deleted.";
             }
         }
-        
+        //return message if task name is not found
         return "Task '" + taskName + "' not found.";
     }
      // Existing methods like findLongestDurationTask, deleteTaskByName, etc.
