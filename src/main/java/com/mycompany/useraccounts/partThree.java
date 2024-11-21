@@ -6,7 +6,7 @@ package com.mycompany.useraccounts;
 
 /**
  *
- * @author Tumiso
+ * @author Blessing
  */
 public class partThree {
     
